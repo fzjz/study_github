@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script>
+
+     //函数使用分为两步：  声明函数  和调用函数
+     //1、声明函数
+     //function 声明函数的关键字 。声明还要调用才可以执行，不调用不执行。
+     function  sayHi(){
+         console.log('hello ~');
+     }
+
+     //2、调用函数
+     sayHi();
+
+     // --------------------------------
+     //使用函数参数实现
+     function  cook(aru){
+         console.log(aru);
+     }
+     cook('酸辣土豆丝');
+    // ---------------------------------------
+    //函数参数个数不匹配的问题
+     function getSum(num1,num2) {
+         console.log(num1 + num2);
+       }
+       //参数匹配
+    getSum(1,2);
+    //参数不匹配 ，多于
+    getSum(1,2,3);
+    //参数不匹配 ，少于 ,  num2没被赋值，是 undefined,
+    getSum(1);  //多于的参数都被设为undefined ,结果是NaN
+
+    // -----------------------------
+    //函数两种声明方式
+    //1 、利用函数关键字function（命名函数）
+       function  func1(param) {  }
+       func1();
+
+    //2、 函数表达式(匿名函数)  //func2 是变量名，不是函数名。。
+    //var 变量名 = function(){};
+    var func2 =  function(){
+        console.log('函数表达式');
+    }
+    func2();
+
+ </script>
+</head>
+
+<body>
+
+</body>
+</html>

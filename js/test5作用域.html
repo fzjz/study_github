@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script>
+
+     //1、作用域  ： 代码名字（变量）在某个范围内起作用和效果
+     //2、js作用域（ES6）之前 ： 全局作用域  局部作用域
+     //全局作用域： 整个script标签 或者 是一个单独的js文件
+     var num =10;
+     console.log(num);
+     //局部作用域    函数内部就是局部作用域，出了函数就不起作用了。
+     function fn(){
+         var num =20;
+         console.log(num);
+     }
+     fn();
+     console.log(num);
+
+
+ </script>
+</head>
+
+<body>
+
+</body>
+</html>
